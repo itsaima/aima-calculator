@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AIMA Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main class="calculator" id="calculator">
+
+    <header class="calculator__header">
+      <span class="calculator__name">AIMA</span>
+      <span class="calculator__tag">scientific</span>
+    </header>
+
+    <section class="display">
+      <div class="display__modes">
+        <span id="mode-deg" class="mode on">DEG</span>
+        <span id="mode-rad" class="mode">RAD</span>
+        <span id="mode-inv" class="mode">INV</span>
+        <span id="mode-mem" class="mode">M</span>
+      </div>
+      <div class="display__expression" id="expr">&nbsp;</div>
+      <div class="display__result" id="result">0</div>
+    </section>
+
+    <!-- scientific functions -->
+    <section class="keys keys--functions">
+      <button class="key key--fn" data-act="inv">Inv</button>
+      <button class="key key--fn" data-act="sin">sin</button>
+      <button class="key key--fn" data-act="cos">cos</button>
+      <button class="key key--fn" data-act="tan">tan</button>
+      <button class="key key--fn" data-act="rad">Deg</button>
+
+      <button class="key key--fn" data-act="pow2">x²</button>
+      <button class="key key--fn" data-act="powy">x^y</button>
+      <button class="key key--fn" data-act="sqrt">√x</button>
+      <button class="key key--fn" data-act="log">log</button>
+      <button class="key key--fn" data-act="ln">ln</button>
+
+      <button class="key key--fn" data-act="pi">π</button>
+      <button class="key key--fn" data-act="e">e</button>
+      <button class="key key--fn" data-act="fact">n!</button>
+      <button class="key key--fn" data-act="lparen">(</button>
+      <button class="key key--fn" data-act="rparen">)</button>
+    </section>
+
+    <!-- memory -->
+    <section class="keys keys--memory">
+      <button class="key key--mem" data-act="mc">MC</button>
+      <button class="key key--mem" data-act="mr">MR</button>
+      <button class="key key--mem" data-act="mminus">M&nbsp;−</button>
+      <button class="key key--mem" data-act="mplus">M&nbsp;+</button>
+      <button class="key key--accent" data-act="ce">CE</button>
+    </section>
+
+    <!-- main pad -->
+    <section class="keys keys--main">
+      <button class="key key--fn" data-act="clear">C</button>
+      <button class="key key--fn" data-act="back">⌫</button>
+      <button class="key key--fn" data-act="percent">%</button>
+      <button class="key key--op" data-act="div">÷</button>
+      <button class="key key--op" data-act="mul">×</button>
+
+      <button class="key key--num" data-act="7">7</button>
+      <button class="key key--num" data-act="8">8</button>
+      <button class="key key--num" data-act="9">9</button>
+      <button class="key key--op" data-act="sub">−</button>
+      <button class="key key--fn" data-act="sign">±</button>
+
+      <button class="key key--num" data-act="4">4</button>
+      <button class="key key--num" data-act="5">5</button>
+      <button class="key key--num" data-act="6">6</button>
+      <button class="key key--op key--wide2" data-act="add">+</button>
+
+      <button class="key key--num" data-act="1">1</button>
+      <button class="key key--num" data-act="2">2</button>
+      <button class="key key--num" data-act="3">3</button>
+      <button class="key key--accent key--wide2" data-act="equals">=</button>
+
+      <button class="key key--num key--wide2" data-act="0">0</button>
+      <button class="key key--num" data-act=".">.</button>
+      <button class="key key--fn" data-act="ans">Ans</button>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
