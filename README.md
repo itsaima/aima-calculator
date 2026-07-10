@@ -6,7 +6,7 @@ Started as a simple layout mock and grew into something a bit more useful, with 
 
 ## Screenshot
 
-![AIMA Calculator screenshot](./screenshot.png)
+![AIMA Calculator screenshot](./screenshot/screenshot.png)
 
 ## Features
 
